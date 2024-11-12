@@ -74,7 +74,7 @@ export const DATA = {
       href: "https://esnadcom.ly/",
       badges: [],
       location: "Tripoli, Libya",
-      title: "Full-Stack Developer",
+      title: "Full-Stack Web Developer",
       logoUrl: "/esnadcom.png",
       start: "Oct 2018",
       end: "Present",
@@ -392,7 +392,7 @@ export const DATA = {
       dates: "Nov 2021",
       active: true,
       description:
-        "Developed a comprehensive E-Marketplace under [Al3lama](https://al3lama.ly) for buying and selling new and used products. The platform offers a wide range of items, featuring special offers on many products. Shop easily and safely from anywhere with our secure and user-friendly interface.",
+        "Developed a comprehensive E-Commerce under [Al3lama](https://al3lama.ly) for buying and selling new and used products. The platform offers a wide range of items, featuring special offers on many products. Shop easily and safely from anywhere with our secure and user-friendly interface.",
       technologies: [
         "Vue",
         "Nuxt",
