@@ -70,18 +70,6 @@ export const DATA = {
         "ZiLab is a blockchain development company based in Latvia. provide blockchain development services, including smart contract development, DApp development, and blockchain consulting. Our team of blockchain developers has extensive experience in developing blockchain solutions for various industries, including finance, healthcare, supply chain, and more.",
     },
     {
-      company: "Ceramic",
-      href: "https://dv.ly",
-      badges: [],
-      location: "Tripoli, Libya",
-      title: "Frontend Developer (Part-Time)",
-      logoUrl: "/ceramic.png",
-      start: "June 2021",
-      end: "Dec 2021",
-      description:
-        "CERAMIC is a company that aims to work for advancing data handling in governmental and private Libyan institutes. Our domain of work includes data collection, mining, analysis, Software Development, and other related AI technologies.  ",
-    },
-    {
       company: "Esnadcom",
       href: "https://esnadcom.ly/",
       badges: [],
@@ -92,6 +80,18 @@ export const DATA = {
       end: "Present",
       description:
         "Esnadcom is a technology company specializing in the development of web-based applications for educational institutions. Our mission is to assist these institutions in establishing robust and efficient systems. Recently, we successfully developed and implemented an integrated system for the Libyan Academy for Postgraduate Studies and its branches, showcasing our commitment to excellence and innovation in the education sector.",
+    },
+    {
+      company: "Ceramic",
+      href: "https://dv.ly",
+      badges: [],
+      location: "Tripoli, Libya",
+      title: "Frontend Developer (Part-Time)",
+      logoUrl: "/ceramic.png",
+      start: "June 2021",
+      end: "Dec 2021",
+      description:
+        "CERAMIC is a company that aims to work for advancing data handling in governmental and private Libyan institutes. Our domain of work includes data collection, mining, analysis, Software Development, and other related AI technologies.  ",
     },
   ],
   education: [
