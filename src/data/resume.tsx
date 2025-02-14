@@ -27,10 +27,10 @@ export const DATA = {
     "TailwindCSS",
     "Nginx",
   ],
-  cv: "/cv.pdf",
+  // cv: "/cv.pdf",
   contact: {
     email: "ahmedelforjani50@gmail.com",
-    tel: "+218925041820",
+    // tel: "+218925041820",
     social: {
       GitHub: {
         name: "GitHub",
@@ -39,20 +39,20 @@ export const DATA = {
 
         navbar: true,
       },
-      LinkedIn: {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/ahmedalforjani/",
-        icon: Icons.linkedin,
+      // LinkedIn: {
+      //   name: "LinkedIn",
+      //   url: "https://www.linkedin.com/in/ahmedalforjani/",
+      //   icon: Icons.linkedin,
 
-        navbar: true,
-      },
-      X: {
-        name: "X",
-        url: "https://x.com/Ahmed_Alforjani",
-        icon: Icons.x,
+      //   navbar: true,
+      // },
+      // X: {
+      //   name: "X",
+      //   url: "https://x.com/Ahmed_Alforjani",
+      //   icon: Icons.x,
 
-        navbar: true,
-      },
+      //   navbar: true,
+      // },
     },
   },
 
