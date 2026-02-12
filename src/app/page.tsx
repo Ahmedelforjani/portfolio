@@ -9,7 +9,12 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowRightIcon, MapPinIcon, SendIcon } from "lucide-react";
+import {
+  ArrowRightIcon,
+  ExternalLinkIcon,
+  MapPinIcon,
+  SendIcon,
+} from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -29,35 +34,68 @@ export default function Page() {
     <main className="flex flex-col min-h-dvh space-y-10">
       <section id="hero">
         <div className="mx-auto w-full max-w-4xl space-y-8">
-          <div className="gap-2 flex justify-between">
-            <div className="flex-col flex flex-1">
-              {/* <BlurFadeText
-                className="flex items-center text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
-                text={DATA.name}
-                yOffset={8}
-              /> */}
-              <div className="flex items-center text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                <BlurFadeText
-                  className="-translate-y-2!"
-                  text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
-                />
-              </div>
-              <BlurFade delay={BLUR_FADE_DELAY * 2}>
-                <p className="max-w-[520px] md:text-xl">{DATA.description}</p>
-              </BlurFade>
-              {/* <BlurFade delay={BLUR_FADE_DELAY * 3}>
-                <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
-                  <MapPinIcon className="size-3.5" />
-                  <span>{DATA.location}</span>
+          <div className="flex flex-col-reverse items-center gap-8 sm:flex-row sm:items-start sm:justify-between">
+            <div className="flex flex-col items-center text-center sm:items-start sm:text-left flex-1 gap-4">
+              <BlurFade delay={BLUR_FADE_DELAY}>
+                <div className="inline-flex items-center gap-2 rounded-full border border-border/50 bg-muted/30 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur-sm">
+                  <span className="relative flex size-2">
+                    <span className="absolute inline-flex size-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                    <span className="relative inline-flex size-2 rounded-full bg-emerald-500" />
+                  </span>
+                  Available for new projects
                 </div>
-              </BlurFade> */}
+              </BlurFade>
+
+              <div className="flex items-center text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                <BlurFadeText text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`} />
+              </div>
+
+              <BlurFade delay={BLUR_FADE_DELAY * 2}>
+                <p className="max-w-[540px] text-balance text-muted-foreground md:text-lg">
+                  {DATA.description}
+                </p>
+              </BlurFade>
+
+              <BlurFade delay={BLUR_FADE_DELAY * 3}>
+                <div className="flex flex-wrap items-center justify-center gap-3 sm:justify-start">
+                  <Link
+                    href={DATA.cv}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground shadow-sm transition-all hover:shadow-md active:scale-[0.98]"
+                  >
+                    View CV
+                    <ExternalLinkIcon className="size-3 opacity-50 transition-opacity group-hover:opacity-100" />
+                  </Link>
+                  <Link
+                    href={`mailto:${DATA.contact.email}`}
+                    className="inline-flex items-center gap-2 rounded-full border border-border/70 bg-background px-5 py-2.5 text-sm font-medium text-foreground transition-all hover:bg-muted active:scale-[0.98]"
+                  >
+                    Get in touch
+                    <ArrowRightIcon className="size-3.5" />
+                  </Link>
+                  <Link
+                    href={DATA.locationLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                  >
+                    <MapPinIcon className="size-3.5" />
+                    {DATA.location}
+                  </Link>
+                </div>
+              </BlurFade>
             </div>
 
             <BlurFade delay={BLUR_FADE_DELAY * 2}>
-              <Avatar className="size-28 border-2 border-border shadow-lg sm:size-32">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
-              </Avatar>
+              <div className="relative shrink-0">
+                <div className="absolute -inset-3 animate-[spin_8s_linear_infinite] rounded-full bg-[conic-gradient(from_0deg,_hsl(var(--brand))_0%,_hsl(270_70%_60%)_25%,_hsl(var(--brand)/0.3)_50%,_hsl(270_70%_60%)_75%,_hsl(var(--brand))_100%)] opacity-60 blur-xl" />
+                <div className="absolute -inset-3 animate-[spin_8s_linear_infinite] rounded-full bg-[conic-gradient(from_180deg,_hsl(270_70%_60%)_0%,_hsl(var(--brand))_25%,_hsl(270_70%_60%/0.3)_50%,_hsl(var(--brand))_75%,_hsl(270_70%_60%)_100%)] opacity-30 blur-2xl" />
+                <Avatar className="relative size-32 border-2 border-border/50 shadow-xl ring-4 ring-background sm:size-36">
+                  <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                  <AvatarFallback>{DATA.initials}</AvatarFallback>
+                </Avatar>
+              </div>
             </BlurFade>
           </div>
         </div>
