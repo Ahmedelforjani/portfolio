@@ -1,17 +1,11 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import Particles from "./magicui/particles";
 import { ShootingStars } from "./magicui/shooting-stars";
-import { useEffect, useState } from "react";
 
 export default function BackgroundEffect() {
   const { theme } = useTheme();
-  const [color, setColor] = useState("#ffffff");
-
-  useEffect(() => {
-    setColor(theme === "dark" ? "#ffffff" : "#000000");
-  }, [theme]);
+  const color = theme === "dark" ? "#ffffff" : "#000000";
 
   return (
     <>

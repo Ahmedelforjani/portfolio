@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="BuyBot project cover">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="grid" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14b8a6" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <g opacity="0.22">
+    <rect x="0" y="100" width="1200" height="2" fill="url(#grid)"/>
+    <rect x="0" y="200" width="1200" height="2" fill="url(#grid)"/>
+    <rect x="0" y="300" width="1200" height="2" fill="url(#grid)"/>
+    <rect x="0" y="400" width="1200" height="2" fill="url(#grid)"/>
+    <rect x="0" y="500" width="1200" height="2" fill="url(#grid)"/>
+    <rect x="0" y="600" width="1200" height="2" fill="url(#grid)"/>
+  </g>
+  <rect x="88" y="94" width="1024" height="512" rx="24" fill="#0b1220" opacity="0.5" stroke="#134e4a"/>
+  <text x="130" y="240" fill="#f0fdfa" font-family="Arial, sans-serif" font-size="66" font-weight="700">BuyBot</text>
+  <text x="130" y="312" fill="#99f6e4" font-family="Arial, sans-serif" font-size="34">Cardano Telegram Trade Alerts</text>
+  <text x="130" y="374" fill="#ccfbf1" font-family="Arial, sans-serif" font-size="30">Token Tracking, Custom Notifications, Group Delivery</text>
+  <rect x="130" y="434" width="356" height="56" rx="28" fill="#14b8a6" opacity="0.2"/>
+  <text x="166" y="471" fill="#5eead4" font-family="Arial, sans-serif" font-size="25" font-weight="600">Node.js + MongoDB + Telegraf</text>
+</svg>

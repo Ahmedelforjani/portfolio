@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Skina project cover">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#172554"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <radialGradient id="bubble" cx="20%" cy="10%" r="80%">
+      <stop offset="0%" stop-color="#93c5fd" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#93c5fd" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <rect width="1200" height="700" fill="url(#bubble)"/>
+  <circle cx="1020" cy="140" r="120" fill="#60a5fa" opacity="0.2"/>
+  <circle cx="920" cy="560" r="180" fill="#bfdbfe" opacity="0.16"/>
+  <text x="90" y="240" fill="#eff6ff" font-family="Arial, sans-serif" font-size="64" font-weight="700">Skina</text>
+  <text x="90" y="310" fill="#dbeafe" font-family="Arial, sans-serif" font-size="36">Booking Platform APIs</text>
+  <text x="90" y="372" fill="#bfdbfe" font-family="Arial, sans-serif" font-size="30">Scheduling, Data Security, Mobile Integrations</text>
+  <rect x="90" y="430" width="320" height="56" rx="28" fill="#eff6ff" opacity="0.16"/>
+  <text x="126" y="467" fill="#dbeafe" font-family="Arial, sans-serif" font-size="26" font-weight="600">Laravel + MySQL</text>
+</svg>

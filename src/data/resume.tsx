@@ -7,9 +7,9 @@ export const DATA = {
   location: "Tripoli, Libya",
   locationLink: "https://www.google.com/maps/place/tripoli",
   description:
-    "Software Engineer focused primarily on web development, I enjoy learning new technologies, building things, and helping people.",
+    "Senior Full-Stack & Blockchain Engineer building scalable web platforms and production-ready decentralized systems.",
   summary:
-    "My programming journey began in high school in 2012, where I started exploring various programming languages. By late 2018, I began working as a freelancer, with my first project contributing to building a website for the [University of Tripoli](https://uot.edu.ly/). Next up, I co-founded a company with two friends, focusing on developing web applications for universities and academic institutions. I earned a degree in software engineering, and my graduation project, [ClassHub](https://trial.classhub.ly/), an LMS that played a crucial role during COVID-19, was recognized as one of the top projects in my faculty and continues to operate successfully to this day. I also supervised a hackathon managed by Expertise France in Libya, and since 2022, I've been working remotely for [ZiLab](https://zilab.co) blockchain development company based in Latvia.",
+    "Senior Full-Stack & Blockchain Engineer architecting scalable web platforms and decentralized systems across Web2 and Web3. I focus on backend architecture, modern frontend engineering, and smart contract development with a strong emphasis on clean system design, performance, security, and long-term maintainability.",
   avatarUrl: "/me.jpg",
   skills: [
     "Vue",
@@ -27,7 +27,25 @@ export const DATA = {
     "TailwindCSS",
     "Nginx",
   ],
-  // cv: "/cv.pdf",
+  skillGroups: [
+    {
+      category: "Frontend",
+      skills: ["React", "Vue", "Next.js", "Nuxt", "TailwindCSS", "Typescript"],
+    },
+    {
+      category: "Backend",
+      skills: ["Node.js", "Laravel", "PHP", "Nginx"],
+    },
+    {
+      category: "Blockchain",
+      skills: ["Solidity", "Viem", "Wagmi", "Hardhat"],
+    },
+    {
+      category: "Database",
+      skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
+    },
+  ],
+  cv: "/cv.pdf",
   contact: {
     email: "ahmedelforjani50@gmail.com",
     // tel: "+218925041820",
@@ -67,7 +85,7 @@ export const DATA = {
       start: "June 2022",
       end: "Present",
       description:
-        "ZiLab is a blockchain development company based in Latvia. provide blockchain development services, including smart contract development, DApp development, and blockchain consulting. Our team of blockchain developers has extensive experience in developing blockchain solutions for various industries, including finance, healthcare, supply chain, and more.",
+        "Design and develop smart contracts and decentralized applications for Web3 and DeFi products. Lead blockchain integration with modern frontend frameworks while building backend services that support on-chain interactions. Contribute to architecture, deployment, testing, and security preparation in distributed teams delivering production-grade blockchain solutions.",
     },
     {
       company: "Esnadcom",
@@ -79,7 +97,7 @@ export const DATA = {
       start: "Oct 2018",
       end: "Present",
       description:
-        "Esnadcom is a technology company specializing in the development of web-based applications for educational institutions. Our mission is to assist these institutions in establishing robust and efficient systems. Recently, we successfully developed and implemented an integrated system for the Libyan Academy for Postgraduate Studies and its branches, showcasing our commitment to excellence and innovation in the education sector.",
+        "Architect and deliver enterprise-grade systems for educational institutions, including Student Management Systems (SMS), CMS platforms, and administrative portals. Lead backend API development with Laravel and relational databases, while building responsive frontend applications with Vue.js and modern JavaScript frameworks. Oversee deployment, server configuration, and system optimization for scalability across multiple university branches.",
     },
     {
       company: "Ceramic",
@@ -91,7 +109,7 @@ export const DATA = {
       start: "June 2021",
       end: "Dec 2021",
       description:
-        "CERAMIC is a company that aims to work for advancing data handling in governmental and private Libyan institutes. Our domain of work includes data collection, mining, analysis, Software Development, and other related AI technologies.  ",
+        "Built responsive, data-driven interfaces for institutional platforms with a focus on performance, usability, and reliable API integration in a collaborative delivery environment.",
     },
   ],
   education: [
@@ -110,8 +128,9 @@ export const DATA = {
       href: "https://www.pinky.finance/marketplace/redog-full-website-with-eth-multi-stage-token-presale-integration-smart-contract",
       dates: "Nov 2024",
       active: true,
+      category: "blockchain",
       description:
-        "Developed a decentralized application (DApp) using React JS, specifically designed to facilitate token presales on the Ethereum Blockchain. This platform provides a straightforward, single-stage presale process with robust functionalities, perfect for individuals and businesses looking to participate in or launch token sales.",
+        "Built a multi-stage token presale dApp with secure smart-contract logic, wallet integration, and real-time purchase tracking for Web3 fundraising campaigns.",
       technologies: [
         "Solidity",
         "React",
@@ -133,7 +152,7 @@ export const DATA = {
           icon: <Icons.contract className="size-3" />,
         },
       ],
-      image: "/projects/presale-website.png",
+      image: "/projects/cover-presale.svg",
     },
 
     {
@@ -141,8 +160,9 @@ export const DATA = {
       href: "https://zad-almuslim.ly",
       dates: "Sep 2024",
       active: true,
+      category: "web",
       description:
-        "Zad Al-Muslim is an Islamic resource platform offering Quran recitations, Islamic radio stations, and educational lessons. It provides easy access to spiritual resources, enhancing religious knowledge and practice with a user-friendly interface.",
+        "Built an Islamic content platform aggregating Quran recitations, radio streams, and lessons with a fast, accessible interface for daily use.",
       technologies: ["Vue", "Nuxt", "Typescript", "TailwindCSS", "Shadcn/ui"],
       links: [
         {
@@ -156,15 +176,16 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/projects/zad-almuslim.png",
+      image: "/projects/cover-zad.svg",
     },
     {
       title: "BuyBot (Cardano Blockchain)",
       href: "https://t.me/ADABuyBot",
       dates: "Aug 2024",
       active: true,
+      category: "blockchain",
       description:
-        "Developed a Telegram bot that can be added to group chats with a given token address, providing customizable notification messages for each purchase.",
+        "Developed a Telegram buy-notification bot for Cardano tokens with configurable alerts, token tracking, and reliable message delivery for active trading communities.",
       technologies: ["Telegraf", "Telegram", "Node.js", "MongoDB", "Viem"],
       links: [
         {
@@ -173,15 +194,16 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/projects/buybot.jpg",
+      image: "/projects/cover-buybot.svg",
     },
     {
       title: "DriftZone",
       href: "https://t.me/DriftZoneBot",
       dates: "Jun 2024",
       active: true,
+      category: "web",
       description:
-        "Developed Telegram Mini-App game with +300k players. DriftZone is a game where players battle in real time between each others using Drifters to earn in-game points, purchase items with Telegram stars, and qualify for crypto token airdrops.",
+        "Engineered a real-time multiplayer Telegram Mini App serving 300k+ users. Built scalable backend infrastructure, integrated Telegram Stars payments, and implemented crypto-token airdrop mechanics.",
       technologies: [
         "React",
         "Typescript",
@@ -202,15 +224,16 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/projects/driftzone.jpg",
+      image: "/projects/cover-driftzone.svg",
     },
     {
       title: "BulkSender",
       href: "https://eth-multisender.zilab.co/",
       dates: "Nov 2023",
       active: true,
+      category: "blockchain",
       description:
-        "Developed a comprehensive multisender service dApp for the Ethereum Blockchain, designed to facilitate bulk sending of crypto tokens at the lowest market fees, while enabling platform owners to earn commissions.",
+        "Built a multisender dApp for low-fee bulk token distribution, including commission logic for platform owners and secure transaction workflows.",
       technologies: [
         "React",
         "Typescript",
@@ -232,15 +255,16 @@ export const DATA = {
           icon: <Icons.contract className="size-3" />,
         },
       ],
-      image: "/projects/multisender.jpg",
+      image: "/projects/cover-multisender.svg",
     },
     {
       title: "University of Zintan",
       href: "https://uoz.edu.ly",
       dates: "Oct 2023",
       active: true,
+      category: "education",
       description:
-        "Developed a comprehensive system for the university, which includes a website, a Content Management System (CMS), a Student Management System (SMS), and a fully integrated platform. This system efficiently manages all aspects of the univeristy.",
+        "Designed and delivered a fully integrated academic ecosystem including the public website, CMS, and Student Management System to streamline operations, enrollment workflows, and reporting.",
       technologies: ["Vue", "Typescript", "TailwindCSS", "Laravel", "MySQL"],
       links: [
         {
@@ -249,15 +273,16 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/projects/uoz.png",
+      image: "/projects/cover-uoz.svg",
     },
     {
       title: "Cupcake Portal",
       href: "https://cupcake-portal.vercel.app/",
       dates: "Oct 2023",
       active: true,
+      category: "blockchain",
       description:
-        "Developed a simple Web3 platform for accepting donations from various blockchain networks, ensuring secure and transparent transactions.",
+        "Built a multi-chain donation platform with wallet connectivity and transparent on-chain payment flows for contributors and campaign owners.",
       technologies: [
         "Solidity",
         "React",
@@ -279,15 +304,16 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/projects/cupcake.png",
+      image: "/projects/cover-cupcake.svg",
     },
     {
       title: "Etheract",
       href: "https://ethact.vercel.app",
       dates: "Oct 2023",
       active: true,
+      category: "blockchain",
       description:
-        "Developed a web tool for interacting with unverified smart contract methods across multiple blockchain networks via a simple UI. The tool displays available functions, allowing users to input parameters and execute functions seamlessly.",
+        "Built a developer tool for interacting with unverified smart-contract methods across chains, with dynamic function rendering and streamlined execution flows.",
       technologies: [
         "React",
         "Next.js",
@@ -309,15 +335,16 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/projects/ethact.png",
+      image: "/projects/cover-ethact.svg",
     },
     {
       title: "Pinky Finance",
       href: "https://www.pinky.finance",
       dates: "Aug 2023",
       active: true,
+      category: "blockchain",
       description:
-        "Developed a fully decentralized Web 3.0 marketplace under [ZiLab](https://zilab.io), enabling developers to easily submit their products for sale. Users can purchase these products using cryptocurrency payments, with the convenience of automatic file delivery.",
+        "Developed smart contracts and decentralized marketplace logic enabling crypto-based purchases with automated digital product delivery in a Web3 marketplace environment.",
       technologies: [
         "Solidity",
         "React",
@@ -336,15 +363,16 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/projects/web3_marketplace.jpg",
+      image: "/projects/cover-pinky.svg",
     },
     {
       title: "Skina",
       href: "https://www.skina.net/",
       dates: "Aug 2023",
       active: true,
+      category: "web",
       description:
-        "Skina is a mobile app for booking beauty and sports services near you. I developed the backend APIs to ensure secure and efficient functionality.",
+        "Built backend APIs for a scalable booking platform, supporting service scheduling, secure data handling, and smooth integration with the mobile product experience.",
       technologies: ["Laravel", "MySQL", "Pusher", "Radis"],
       links: [
         {
@@ -353,15 +381,16 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/projects/skina.jpg",
+      image: "/projects/cover-skina.svg",
     },
     {
       title: "Multi-Chain DEX",
       href: "https://prodex-base-chain.zilab.co/",
       dates: "Aug 2022",
       active: true,
+      category: "blockchain",
       description:
-        "Developed a highly efficient multi-chain decentralized exchange (DEX) for seamless trading and liquidity management. Built with React.js, it offers a smooth user experience and advanced smart contract functionalities. The DEX features integrated wallet connect, supporting over 500 wallets for broad accessibility and ease of use.",
+        "Built a multi-chain DEX interface for swaps and liquidity management with wallet connectivity, smart-contract integration, and support for 500+ wallets.",
       technologies: [
         "Solidity",
         "React",
@@ -384,15 +413,16 @@ export const DATA = {
           icon: <Icons.contract className="size-3" />,
         },
       ],
-      image: "/projects/swap.jpg",
+      image: "/projects/cover-dex.svg",
     },
     {
       title: "Libozzle",
       href: "https://libozzle.com/en",
       dates: "Nov 2021",
       active: true,
+      category: "web",
       description:
-        "Developed a comprehensive E-Commerce under [Al3lama](https://al3lama.ly) for buying and selling new and used products. The platform offers a wide range of items, featuring special offers on many products. Shop easily and safely from anywhere with our secure and user-friendly interface.",
+        "Developed an e-commerce platform with product management, scheduling workflows, and payment integration, focused on reliability, usability, and operational scalability.",
       technologies: [
         "Vue",
         "Nuxt",
@@ -409,15 +439,16 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/projects/libozzle.jpg",
+      image: "/projects/cover-libozzle.svg",
     },
     {
       title: "Libyan Academy for Postgraduate Studies",
       href: "https://academy.edu.ly/en",
       dates: "May 2020",
       active: true,
+      category: "education",
       description:
-        "Developed a comprehensive system for the Academy, which includes a website, a Content Management System (CMS), a Student Management System (SMS), and a fully integrated platform. This system efficiently manages all aspects of the academy.",
+        "Designed and delivered an end-to-end academic platform including the public website, CMS, and Student Management System for academic operations, enrollment, and reporting across branches.",
       technologies: ["Vue", "Typescript", "TailwindCSS", "Laravel", "MySQL"],
       links: [
         {
@@ -426,15 +457,16 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/projects/academy.png",
+      image: "/projects/cover-academy.svg",
     },
     {
       title: "ClassHub",
       href: "https://trial.classhub.ly/",
       dates: "Mar 2020",
       active: true,
+      category: "education",
       description:
-        "Classhub is a Learning Management System (LMS) platform designed to streamline and enhance communication between teachers and students throughout the educational process.",
+        "Built an LMS adopted by the Faculty of Information Technology at the University of Tripoli to support remote education during COVID-19, with continued use in academic operations.",
       technologies: [
         "Vue",
         "Laravel",
@@ -450,7 +482,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/projects/classhub.png",
+      image: "/projects/cover-classhub.svg",
     },
   ],
 } as const;
