@@ -9,7 +9,7 @@ export const DATA = {
   description:
     "Senior Full-Stack & Blockchain Engineer building scalable web platforms and production-ready decentralized systems.",
   summary:
-    "Senior Full-Stack & Blockchain Engineer architecting scalable web platforms and decentralized systems across Web2 and Web3. I focus on backend architecture, modern frontend engineering, and smart contract development with a strong emphasis on clean system design, performance, security, and long-term maintainability.",
+    "Senior Full-Stack & Blockchain Engineer architecting scalable web platforms and decentralized systems across Web2 and Web3. I turn ideas into web and blockchain products, learn fast, and enjoy building things that actually help people. I focus on backend architecture, modern frontend engineering, and smart contract development with a strong emphasis on clean system design, performance, security, and long-term maintainability. I'm also big on sharing what I know and having a good time while doing it.",
   avatarUrl: "/me.jpg",
   skills: [
     "Vue",
