@@ -57,7 +57,7 @@ export default function Page() {
               </BlurFade>
 
               <BlurFade delay={BLUR_FADE_DELAY * 3}>
-                <div className="flex flex-wrap items-center justify-center gap-3 sm:justify-start">
+                <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-4  sm:justify-start">
                   <Link
                     href={DATA.cv}
                     target="_blank"
@@ -78,7 +78,7 @@ export default function Page() {
                     href={DATA.locationLink}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                    className="md:w-fit w-full mx-auto justify-center inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
                   >
                     <MapPinIcon className="size-3.5" />
                     {DATA.location}
@@ -89,8 +89,8 @@ export default function Page() {
 
             <BlurFade delay={BLUR_FADE_DELAY * 2}>
               <div className="relative shrink-0">
-                <div className="absolute -inset-3 animate-[spin_8s_linear_infinite] rounded-full bg-[conic-gradient(from_0deg,_hsl(var(--brand))_0%,_hsl(270_70%_60%)_25%,_hsl(var(--brand)/0.3)_50%,_hsl(270_70%_60%)_75%,_hsl(var(--brand))_100%)] opacity-60 blur-xl" />
-                <div className="absolute -inset-3 animate-[spin_8s_linear_infinite] rounded-full bg-[conic-gradient(from_180deg,_hsl(270_70%_60%)_0%,_hsl(var(--brand))_25%,_hsl(270_70%_60%/0.3)_50%,_hsl(var(--brand))_75%,_hsl(270_70%_60%)_100%)] opacity-30 blur-2xl" />
+                <div className="absolute md:-inset-3 -inset-1 animate-[spin_8s_linear_infinite] rounded-full bg-[conic-gradient(from_0deg,hsl(var(--brand))_0%,hsl(270_70%_60%)_25%,hsl(var(--brand)/0.3)_50%,hsl(270_70%_60%)_75%,hsl(var(--brand))_100%)] opacity-60 blur-xl" />
+                <div className="absolute md:-inset-3 -inset-1 animate-[spin_8s_linear_infinite] rounded-full bg-[conic-gradient(from_180deg,hsl(270_70%_60%)_0%,hsl(var(--brand))_25%,hsl(270_70%_60%/0.3)_50%,hsl(var(--brand))_75%,hsl(270_70%_60%)_100%)] opacity-30 blur-2xl" />
                 <Avatar className="relative size-32 border-2 border-border/50 shadow-xl ring-4 ring-background sm:size-36">
                   <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                   <AvatarFallback>{DATA.initials}</AvatarFallback>
