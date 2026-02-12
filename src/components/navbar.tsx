@@ -25,7 +25,7 @@ export default function Navbar() {
                 href={DATA.cv}
                 className={cn(
                   buttonVariants({ variant: "ghost", size: "icon" }),
-                  "size-12 hover:bg-transparent"
+                  "size-12 rounded-full"
                 )}
                 target="_blank"
               >
@@ -42,7 +42,7 @@ export default function Navbar() {
                 href={`mailto:${DATA.contact.email}`}
                 className={cn(
                   buttonVariants({ variant: "ghost", size: "icon" }),
-                  "size-12 hover:bg-transparent"
+                  "size-12 rounded-full"
                 )}
                 target="_blank"
               >
@@ -65,7 +65,7 @@ export default function Navbar() {
                     href={social.url}
                     className={cn(
                       buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12 hover:bg-transparent"
+                      "size-12 rounded-full"
                     )}
                     target="_blank"
                   >

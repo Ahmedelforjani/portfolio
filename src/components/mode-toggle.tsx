@@ -35,7 +35,7 @@ export function ModeToggle() {
       variant="ghost"
       type="button"
       size="icon"
-      className="px-2 hover:bg-transparent"
+      className="px-2 rounded-full"
       onClick={toggleTheme}
     >
       <SunIcon className="h-5 w-5 text-neutral-800 dark:hidden dark:text-neutral-200" />

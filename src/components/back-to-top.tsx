@@ -9,7 +9,7 @@ export function BackToTop() {
       variant="ghost"
       type="button"
       size="icon"
-      className="px-2 hover:bg-transparent"
+      className="px-2 rounded-full"
       onClick={() => window?.scrollTo({ top: 0, behavior: "smooth" })}
     >
       <ArrowUpIcon className="size-5" />
