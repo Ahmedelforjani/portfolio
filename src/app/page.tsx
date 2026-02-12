@@ -28,7 +28,7 @@ export default function Page() {
   return (
     <main className="flex flex-col min-h-dvh space-y-10">
       <section id="hero">
-        <div className="mx-auto w-full max-w-2xl space-y-8">
+        <div className="mx-auto w-full max-w-4xl space-y-8">
           <div className="gap-2 flex justify-between">
             <div className="flex-col flex flex-1">
               {/* <BlurFadeText
@@ -172,7 +172,7 @@ export default function Page() {
 
           <motion.div
             layout
-            className="grid grid-cols-1 gap-4 sm:grid-cols-2 max-w-[800px] mx-auto"
+            className="mx-auto grid max-w-[1000px] grid-cols-1 gap-4 sm:grid-cols-2"
           >
             <AnimatePresence mode="popLayout">
               {filteredProjects.map((project) => (
@@ -207,7 +207,7 @@ export default function Page() {
       <section id="contact">
         <div className="w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
-            <div className="mx-auto max-w-lg">
+            <div className="mx-auto max-w-xl">
               <div className="rounded-2xl border bg-card p-8 text-center shadow-sm">
                 <div className="mx-auto mb-4 flex size-12 items-center justify-center rounded-full bg-primary/10">
                   <SendIcon className="size-5 text-primary" />
